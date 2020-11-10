@@ -39,14 +39,14 @@ extern "C"
 // Number of pins defined in PinDescription array
 #define PINS_COUNT           (48)
 #define NUM_DIGITAL_PINS     (48)
-#define NUM_ANALOG_INPUTS    (6)
+#define NUM_ANALOG_INPUTS    (4)
 #define NUM_ANALOG_OUTPUTS   (0)
 
 // LEDs
-#define PIN_LED1             (6)
-#define PIN_LED2_R           (8)
-#define PIN_LED2_G           (41)
-#define PIN_LED2_B           (12)
+#define PIN_LED1             (6)  // P0.06
+#define PIN_LED2_R           (8)  // P0.08
+#define PIN_LED2_G           (41) // P1.09
+#define PIN_LED2_B           (12) // P0.12
 
 #define LED_BUILTIN          PIN_LED1
 #define LED_CONN             PIN_LED2_B
@@ -61,15 +61,15 @@ extern "C"
 /*
  * Buttons
  */
-#define PIN_BUTTON           (38)
+#define PIN_BUTTON           (38) // P1.06, SW1
 
 /*
  * Analog pins
  */
-#define PIN_A0               (13)
-#define PIN_A1               (15)
-#define PIN_A2               (0xff)
-#define PIN_A3               (0xff)
+#define PIN_A0               (17) // P0.17
+#define PIN_A1               (20) // P0.20
+#define PIN_A2               (22) // P0.22
+#define PIN_A3               (24) // P0.24
 #define PIN_A4               (0xff)
 #define PIN_A5               (0xff)
 #define PIN_A6               (0xff)
@@ -86,9 +86,9 @@ static const uint8_t A7  = PIN_A7;
 #define ADC_RESOLUTION    14
 
 // Other pins
-#define PIN_AREF           (2)
-#define PIN_NFC1           (9)
-#define PIN_NFC2           (10)
+#define PIN_AREF           (32) // P1.00
+#define PIN_NFC1           (9)  // P0.09
+#define PIN_NFC2           (10) // P0.10
 
 static const uint8_t AREF = PIN_AREF;
 
@@ -96,8 +96,8 @@ static const uint8_t AREF = PIN_AREF;
  * Serial interfaces
  */
 
-#define PIN_SERIAL_RX        (20) // P0.20
-#define PIN_SERIAL_TX        (17) // P0.17
+#define PIN_SERIAL1_RX       (13) // P0.13
+#define PIN_SERIAL1_TX       (15) // P0.15
 
 /*
  * SPI Interfaces
