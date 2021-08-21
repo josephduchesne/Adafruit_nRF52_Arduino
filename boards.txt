@@ -63,6 +63,49 @@ feather52832.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 feather52832.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 
 # ----------------------------------
+# BDB11_nrf52832
+# ----------------------------------
+bdb11_nrf52832.name=bdb11 nRF52832
+bdb11_nrf52832.bootloader.tool=bootburn
+
+# Upload
+bdb11_nrf52832.upload.tool=nrfutil
+bdb11_nrf52832.upload.protocol=nrfutil
+bdb11_nrf52832.upload.use_1200bps_touch=false
+bdb11_nrf52832.upload.wait_for_upload_port=false
+bdb11_nrf52832.upload.native_usb=false
+bdb11_nrf52832.upload.maximum_size=290816
+bdb11_nrf52832.upload.maximum_data_size=52224
+
+# Build
+bdb11_nrf52832.build.mcu=cortex-m4
+bdb11_nrf52832.build.f_cpu=64000000
+bdb11_nrf52832.build.board=NRF52832_BDB11
+bdb11_nrf52832.build.core=nRF5
+bdb11_nrf52832.build.variant=bdb11_nrf52832
+bdb11_nrf52832.build.usb_manufacturer="Adafruit LLC"
+bdb11_nrf52832.build.usb_product="BDB11 nRF52832"
+bdb11_nrf52832.build.extra_flags=-DNRF52832_XXAA -DNRF52
+bdb11_nrf52832.build.ldscript=nrf52832_s132_v6.ld
+
+# SofDevice Menu
+bdb11_nrf52832.menu.softdevice.s132v6=S132 6.1.1
+bdb11_nrf52832.menu.softdevice.s132v6.build.sd_name=s132
+bdb11_nrf52832.menu.softdevice.s132v6.build.sd_version=6.1.1
+bdb11_nrf52832.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+
+# Debug Menu
+bdb11_nrf52832.menu.debug.l0=Level 0 (Release)
+bdb11_nrf52832.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+bdb11_nrf52832.menu.debug.l1=Level 1 (Error Message)
+bdb11_nrf52832.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+bdb11_nrf52832.menu.debug.l2=Level 2 (Full Debug)
+bdb11_nrf52832.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+bdb11_nrf52832.menu.debug.l3=Level 3 (Segger SystemView)
+bdb11_nrf52832.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+bdb11_nrf52832.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# ----------------------------------
 # Bluefruit Feather nRF52840 Express
 # ----------------------------------
 feather52840.name=Adafruit Feather nRF52840 Express
